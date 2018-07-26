@@ -13,10 +13,11 @@
     height: 100%;
     overflow: hidden;
     text-align: center;
-    background:lightblue;
+    background:dimgray;
   }
   .albumTile > .img-container > img {
-    width: 50%
+    width: 75%;
+    padding-top: 5px;
   }
   
   .albumTile > .content {

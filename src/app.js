@@ -33,7 +33,7 @@ class App extends Component {
     //endgame
     endGame = () => {
         if (this.state.score > this.state.highscore) {
-            this.setState({ highscore: this.state.highscore }, function () {
+            this.setState({ highscore: this.state.score }, function () {
                 console.log(this.state.highscore);
             });
         }
@@ -49,13 +49,13 @@ class App extends Component {
     render() {
         return (
             <Body>
-                <Header score={this.state.score} highscore={this.state.highscore}>Album Click Game</Header>
+                <Header score={this.state.score} highscore={this.state.highscore}>Metallica Album Click Game</Header>
                 {this.state.albums.map(albumArt => (
                     <AlbumTile
                         clickCount={this.clickCount}
                         id={albumArt.id}
                         key={albumArt.id}
-                        image={albumArt.image}
+                        image={require(`${albumArt.image}`)}
                     />
                 ))}
             </Body>
