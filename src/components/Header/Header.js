@@ -1,1 +1,4 @@
-export { default } from "./Header";
+import React from "react";
+
+
+export default Header;
