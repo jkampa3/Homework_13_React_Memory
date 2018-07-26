@@ -1,0 +1,27 @@
+.albumTile {
+    background: white;
+    border-radius: 2px;
+    height: 250px;
+    margin: 16px;
+    position: relative;
+    width: 325px;
+    box-shadow: 0 3px 6px lightgrey, 0 3px 6px lightgrey;
+    text-align: left;
+  }
+  
+  .albumTile > .img-container {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background:lightblue;
+  }
+  .albumTile > .img-container > img {
+    width: 50%
+  }
+  
+  .albumTile > .content {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+  }
+  
